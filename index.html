@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container mode-b">
+        <header>
+            <div class="mode">
+                <a href="#"><i id="dark" class="far fa-moon mode-f"></i></a>
+                <a href="#"><i id="light" class="far fa-sun mode-f" ></i></a>
+            </div>
+
+            <div class="alert"></div>
+        </header>
+
+        <section class="calcScreen">
+            <div class="calc">
+                <p id="screen" class="mode-f"></p>
+            </div>
+            <div class="result">
+                <p id="result" class="mode-f"></p>
+            </div>
+        </section>
+
+        <hr class="hr">
+
+        <section class="mainControl">
+
+            <div class="numbersOp">
+                <a href="#" id="cleaAll" class="mode-f">C</a>
+                <a href="#" class="op mode-f" data-op='*'>X</a>
+                <a href="#" class="op mode-f" data-op='/'>/</a>
+                <a href="#" class="digits mode-f">7</a>
+                <a href="#" class="digits mode-f" data-op='/'>8</a>
+                <a href="#" class="digits mode-f">9</a>
+                <a href="#" class="digits mode-f">4</a>
+                <a href="#" class="digits mode-f">5</a>
+                <a href="#" class="digits mode-f">6</a>
+                <a href="#" class="digits mode-f">1</a>
+                <a href="#" class="digits mode-f">2</a>
+                <a href="#" class="digits mode-f">3</a>
+                <a href="#" class="digits mode-f">.</a>
+                <a href="#" class="digits mode-f">0</a>
+                <a href="#" class="digits mode-f">00</a>
+            </div>
+
+            <aside class="mode-b">
+                <a href="#" class="mode-f">^</a>
+                <a href="#" id="btnBack" class="mode-f" data-op='/'><-</a>
+                <a href="#" class="op mode-f" data-op='+'>+</a>
+                <a href="#" class="op mode-f" data-op='-'>-</a>
+                <a href="#" class="op mode-f" data-op='%'>%</a>
+                <button id="calculate" class="mode-f" value="=">=</button>
+            </aside>
+
+        </section>
+
+        <footer class="mode-b"> 
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
